@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,14 +13,16 @@
             background-color: #f4f4f4;
             color: #333;
         }
+
         .container {
-             max-width: 900px;
-             margin: 0 auto;
-             background-color: #fff;
-             padding: 2em;
-             box-shadow: 0 0 15px rgba(0,0,0,0.1);
-             border-radius: 8px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2em;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
         h1 {
             text-align: center;
             color: #2c3e50;
@@ -27,74 +30,102 @@
             padding-bottom: 0.5em;
             margin-bottom: 1em;
         }
+
         h2 {
             color: #3498db;
             margin-top: 1.5em;
             border-bottom: 1px solid #ecf0f1;
             padding-bottom: 0.3em;
         }
+
         ul {
             list-style: none;
             padding: 0;
         }
+
         li {
             margin-bottom: 0.7em;
             background-color: #ffffff;
             padding: 0.8em 1em;
             border-radius: 5px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
             transition: background-color 0.2s ease, transform 0.2s ease;
         }
+
         li:hover {
-             background-color: #ecf0f1;
-             transform: translateX(3px);
+            background-color: #ecf0f1;
+            transform: translateX(3px);
         }
+
         a {
             text-decoration: none;
             color: #2980b9;
             font-weight: 500;
-            display: block; /* Makes the whole list item area clickable */
+            display: block;
+            /* Makes the whole list item area clickable */
         }
+
         a:hover {
             color: #1f618d;
         }
+
         .token-section {
             margin-bottom: 2.5em;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Middlemarch Character Network Visualizations</h1>
 
-        <section class="token-section" id="50tokens">
-            <h2>Co-Occurrences (50 Tokens Window)</h2>
+        <section class="token-section" id="50tokens-bert-cleaned">
+            <h2>Co-Occurrences (50 Tokens, BERT Cleaned, Strength)</h2>
             <ul>
-                <li><a href="co_occurences_50tokens/middlemarch_book_1_network_cleaned_strength.html" target="_blank">Book 1 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_2_network_cleaned_strength.html" target="_blank">Book 2 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_3_network_cleaned_strength.html" target="_blank">Book 3 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_4_network_cleaned_strength.html" target="_blank">Book 4 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_5_network_cleaned_strength.html" target="_blank">Book 5 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_6_network_cleaned_strength.html" target="_blank">Book 6 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_7_network_cleaned_strength.html" target="_blank">Book 7 Network</a></li>
-                <li><a href="co_occurences_50tokens/middlemarch_book_8_network_cleaned_strength.html" target="_blank">Book 8 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_1_network_cleaned_strength.html"
+                        target="_blank">Book 1 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_2_network_cleaned_strength.html"
+                        target="_blank">Book 2 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_3_network_cleaned_strength.html"
+                        target="_blank">Book 3 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_4_network_cleaned_strength.html"
+                        target="_blank">Book 4 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_5_network_cleaned_strength.html"
+                        target="_blank">Book 5 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_6_network_cleaned_strength.html"
+                        target="_blank">Book 6 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_7_network_cleaned_strength.html"
+                        target="_blank">Book 7 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_cleaned/middlemarch_book_8_network_cleaned_strength.html"
+                        target="_blank">Book 8 Network</a></li>
             </ul>
         </section>
 
-        <section class="token-section" id="100tokens">
-            <h2>Co-Occurrences (100 Tokens Window)</h2>
+        <section class="token-section" id="50tokens-bert-community">
+            <h2>Co-Occurrences (50 Tokens, BERT Community Louvain Static Curved v2)</h2>
             <ul>
-                <li><a href="co_occurences_100tokens/middlemarch_book_1_network_cleaned_strength.html" target="_blank">Book 1 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_2_network_cleaned_strength.html" target="_blank">Book 2 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_3_network_cleaned_strength.html" target="_blank">Book 3 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_4_network_cleaned_strength.html" target="_blank">Book 4 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_5_network_cleaned_strength.html" target="_blank">Book 5 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_6_network_cleaned_strength.html" target="_blank">Book 6 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_7_network_cleaned_strength.html" target="_blank">Book 7 Network</a></li>
-                <li><a href="co_occurences_100tokens/middlemarch_book_8_network_cleaned_strength.html" target="_blank">Book 8 Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_1_community_louvain_static_curved.html"
+                        target="_blank">Book 1 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_2_community_louvain_static_curved.html"
+                        target="_blank">Book 2 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_3_community_louvain_static_curved.html"
+                        target="_blank">Book 3 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_4_community_louvain_static_curved.html"
+                        target="_blank">Book 4 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_5_community_louvain_static_curved.html"
+                        target="_blank">Book 5 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_6_community_louvain_static_curved.html"
+                        target="_blank">Book 6 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_7_community_louvain_static_curved.html"
+                        target="_blank">Book 7 Community Network</a></li>
+                <li><a href="co_occurences_50tokens_bert_community_louvain_static_curved_v2/middlemarch_book_8_community_louvain_static_curved.html"
+                        target="_blank">Book 8 Community Network</a></li>
             </ul>
         </section>
+
+        <!-- Removed the 100 tokens section as it's not present in the provided image -->
 
     </div> <!-- /container -->
 </body>
+
 </html>
